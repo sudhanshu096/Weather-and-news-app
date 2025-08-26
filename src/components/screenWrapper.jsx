@@ -8,7 +8,7 @@ const ScreenWrapper = ({children, bg}) => {
     const paddingTop = top>0?top+5:20;
   return (
     <View style={{flex:1, paddingTop, backgroundColor:bg }}>
-      <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{paddingBottom:20}}>
+      <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{paddingBottom:50}}>
 
       
      {

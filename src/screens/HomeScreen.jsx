@@ -62,6 +62,7 @@ const HomeScreen = () => {
     fetchWeatherForecast({cityName,days:'7'
       
     }).then(data=>{
+      console.log("11",data)
       setWeather(data)
       setLoading(false)
     })
@@ -70,7 +71,7 @@ const HomeScreen = () => {
   }
 
   const fetchLocalNews = async()=>{
-    fetchNews('us').then(data=>{
+    fetchNews('in').then(data=>{
       setLocalNews(data?.articles)
       setLoading(false)
     })
